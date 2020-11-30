@@ -1,0 +1,22 @@
+//
+// Created by 张耀文 on 2020/11/30.
+//
+
+
+#include <stdio.h>
+
+int main()
+{
+    float n1 = 3.0;
+    double n2 = 3.0;
+    long n3 = 2000000000;
+    long n4 = 1234567890;
+    printf("long %zd bytes", sizeof(long));
+    int result;
+    result = printf("%.1e %.1e %.1e %.1e\n", n1, n2, n3, n4);
+    printf("printf result %d\n", result);
+    result = printf("%ld %ld\n", n3, n4);
+    printf("printf result %d\n", result);
+    result = printf("%ld %ld %ld %ld\n", n1, n2, n3, n4);
+    printf("printf result %d\n", result);
+}
