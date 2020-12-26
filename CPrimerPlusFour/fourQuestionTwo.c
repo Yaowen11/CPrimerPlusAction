@@ -3,16 +3,17 @@
 //
 
 #include <stdio.h>
-#include <string.h>
 
 int main()
 {
-    char name[20];
     printf("enter you name: ");
+    char name[40];
+    int width;
+    printf("please input your name:");
     scanf("%s", name);
-    printf("your name is: , \"%s\"\n", name);
-    printf("20 weight right print: \"%s.20\"\n", name);
-    printf("\".20%s\" print in left\n", name);
-    short length = strlen(name);
-    printf("beyond 3 char to print: %s.%d", name, length + 3);
+    width = printf("\"%s\"\n", name);
+    width -= 4;
+    printf("\"%20s\".\n", name);
+    printf("\"%-20s\".\n", name);
+    printf("\"%*s\".", (width + 3), name);
 }
