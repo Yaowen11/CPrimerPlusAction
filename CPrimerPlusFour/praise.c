@@ -1,20 +1,15 @@
 //
-// Created by 张耀文 on 2020/11/29.
+// Created by zyw on 2020/11/27.
 //
 
 #include <stdio.h>
-#include <string.h>
-
-#define PRAISE "You are an extraordinary being."
+#define PRAISE "You are an extraordinary being"
 
 int main()
 {
     char name[40];
     printf("What's your name? ");
     scanf("%s", name);
-    printf("Hello, %s. %s\n", name, PRAISE);
-    printf("Your name of %zd letters occupies %zd memory cells. \n", strlen(name), sizeof name);
-    printf("The phrase of phrase has %zd letters ", strlen(PRAISE));
-    printf("and occupies %zd memory cells.\n", sizeof PRAISE);
+    printf("Hello, %s.%s\n", name, PRAISE);
     return 0;
 }
