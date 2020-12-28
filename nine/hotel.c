@@ -12,7 +12,7 @@ int menu(void)
     printf("1) Fairfield Arms     2) Hotel Olympic\n");
     printf("3) Chertworthy Plaza  4) The Stockton\n");
     printf("5} quit\n");
-    printf("%s%s\n", START, STARS);
+    printf("%s%s\n", STARS, STARS);
     while ((status = scanf("%d", &code)) != 1 || (code < 1 || code > 5)) {
         if (status != 1) {
             scanf("%*s");

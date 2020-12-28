@@ -4,7 +4,7 @@
 
 #ifndef CPRIMERPLUSACTION_HOTEL_H
 #define CPRIMERPLUSACTION_HOTEL_H
-#define  QUIT
+#define  QUIT 5
 #define HOTEL1 180.00
 #define HOTEL2 225.00
 #define HOTEL3 255.00
